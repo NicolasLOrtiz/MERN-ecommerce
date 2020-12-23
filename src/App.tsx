@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Product from './components/Product';
+import data from './data';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <section className="grid-container">
+      <header className="row">
+        <div>
+          <a className="brand" href="/">Woodland</a>
+        </div>
+        <div>
+          <a href="/cart">Carrinho</a>
+          <a href="/singin">Entrar</a>
+        </div>
       </header>
-    </div>
+      <main>
+        <div className="row center">
+			{data.product.map((product) => (
+			<Product key={product._id} product={product}></Product>
+		  ))}
+        </div>
+      </main>
+      <footer className="row center">Todos os direitos reservados</footer>
+    </section>
   );
 }
 
