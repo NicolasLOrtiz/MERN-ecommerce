@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
 
-export default function Rating(props) {
+export default function Rating(props: { rating: any; numReviews: any; }) {
 	const { rating, numReviews } = props;
 	return (
 		<div className="product-card-rating">

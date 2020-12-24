@@ -24,8 +24,8 @@ body {
 }
 
 /************************************************
-  Layout
-  *************************************************/
+# Layout
+*************************************************/
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -55,8 +55,8 @@ footer {
 }
 
 /************************************************
-  Common
-  *************************************************/
+# Common
+*************************************************/
 h1 {
   font-size: 1.8rem;
   padding: 1rem 0;
@@ -149,8 +149,8 @@ a.brand {
 
 
 /************************************************
-  IMAGE
-  *************************************************/
+# IMAGE
+*************************************************/
 img {
   border-radius: 0.5rem;
 }
@@ -166,8 +166,8 @@ img.large{
 }
 
 /************************************************
-  PRODUCT CARD
-  *************************************************/
+# PRODUCT CARD
+*************************************************/
 .product-card {
   border: 0.1rem #fc8621 solid; /* PRIMARY COLOR*/
   background-color: #f9e0ae; /* BACKGROUND COLOR */
@@ -197,7 +197,7 @@ img.large{
 }
 
 /************************************************
-CART CARD
+# CART CARD
 *************************************************/
 .cart-card {
   border: 0.1rem #fc8621 solid; /* PRIMARY COLOR*/
@@ -216,12 +216,29 @@ CART CARD
 
 
 /************************************************
-# CART CARD
+# ALERT
 *************************************************/
 .success{
 	color: #20a020;
 }
 
-.error{
+.danger{
 	color: #a02020;
 }
+
+.alert {
+	padding: 1rem;
+	border: 0.1rem solid transparent;
+	border-radius: 0.5rem;
+}
+
+.alert-info {
+	color: #2020a0;
+	background-color: #e0e0ff;
+}
+
+.alert-danger {
+	color: #a02020;
+	background-color: #ffe0e0e0;
+}
+

@@ -4,7 +4,7 @@ import Rating from '../components/Rating';
 import data from '../data';
 
 export default function ProductPage(props: { match: { params: { id: string; }; }; }) {
-	const product = data.product.find((x) => x._id === props.match.params.id);
+	const product = data.products.find((x) => x.id === props.match.params.id);
 
 	if (!product) {
 		return <div>Produto Não Encontrado</div>;
@@ -38,7 +38,7 @@ export default function ProductPage(props: { match: { params: { id: string; }; }
 										{product.contInStock > 0 ? (
 											<span className="success">Em Estoque</span>
 										) : (
-												<span className="error">Indisponível</span>
+												<span className="danger">Indisponível</span>
 											)}
 									</div>
 								</div>

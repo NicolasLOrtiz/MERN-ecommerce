@@ -1,7 +1,7 @@
 const data = {
-	product: [
+	products: [
 		{
-			_id: '1',
+			id: '1',
 			name: 'Armário 1',
 			category: 'Armário',
 			image: '/images/prod-armario1.jpg',
@@ -13,7 +13,7 @@ const data = {
 			contInStock: 5,
 		},
 		{
-			_id: '2',
+			id: '2',
 			name: 'Armário 2',
 			category: 'Armário',
 			image: '/images/prod-armario2.jpg',
@@ -25,7 +25,7 @@ const data = {
 			contInStock: 5,
 		},
 		{
-			_id: '3',
+			id: '3',
 			name: 'Armário 3',
 			category: 'Armário',
 			image: '/images/prod-armario3.jpg',
@@ -37,7 +37,7 @@ const data = {
 			contInStock: 0,
 		},
 		{
-			_id: '4',
+			id: '4',
 			name: 'Cadeira',
 			category: 'Cadeira',
 			image: '/images/prod-cadeira.jpg',
@@ -49,7 +49,7 @@ const data = {
 			contInStock: 5,
 		},
 		{
-			_id: '5',
+			id: '5',
 			name: 'Cadeira 1',
 			category: 'Cadeira',
 			image: '/images/prod-cadeira1.jpg',
@@ -61,7 +61,7 @@ const data = {
 			contInStock: 5,
 		},
 		{
-			_id: '6',
+			id: '6',
 			name: 'Cadeira 2',
 			category: 'Cadeira',
 			image: '/images/prod-cadeira2.jpg',
